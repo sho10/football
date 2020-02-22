@@ -1,0 +1,7 @@
+<%= simple_form_for @team do |f| %>
+   <%= f.input :name%>
+   <%#= f.associations :ingredient%>
+   <%= f.input :location %>
+   <%= f.submit 'Submit', class: "new_team" %>
+<% end %>
+

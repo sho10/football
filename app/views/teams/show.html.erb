@@ -1,0 +1,21 @@
+<div class="container">
+    <%= link_to "Back to all teams", root_path %>
+<div class="card">
+  <%= link_to 'Player', new_team_player_path(@team) %>
+  <%= cl_image_tag @team.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="card">
+  <h2><%= @team.name %></h2>
+  <% @cocktail.teams.each do |team| %>
+    <h2>Description</h2>
+    <h2><%= player.name %></h2>
+    <h2><%= player.position %></h2>
+    <h2><%= player.height %></h2>
+    <h2><%= player.weight %></h2>
+    <%= link_to player_path(player), method: :delete, data: { confirm: "Are you sure?" } do %>
+         <i class="fa fa-trash destroy_dose"></i>
+     <% end %>
+      <% end %>
+  </div>
+</div>
+</div>
+

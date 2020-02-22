@@ -1,0 +1,7 @@
+<%= simple_form_for [@team, @player] do |f| %>
+<%= f.input :position%>
+<%= f.input :height%>
+<%= f.input :weight%>
+<%= f.submit "new player", class: 'btn btn-primary' %>
+<% end %>
+
